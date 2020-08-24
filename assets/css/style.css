@@ -1,0 +1,185 @@
+:root {
+    background-color: white;
+    /* this should make the font size 10 px and scalable to be 60% of the default 16px*/
+    font-size: 60%;
+}
+
+/* Global styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: brown;
+}
+
+body {
+    font-family: "Lucida Console", Courier, monospace;
+}
+
+/* Header styles */
+header {
+    background-color: white;
+}
+
+header h1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5.4rem;
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+    font-size: 2.4rem;
+}
+
+header div a {
+    text-decoration: none;
+    color: brown;
+}
+
+header div a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* page content styles */
+.page-content {
+    padding: 2.5rem;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.instructions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 750px;
+    max-width: 80%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 0 10px 2px;
+    font-size: 2.0rem;
+}
+
+.quiz-box {
+    width: 200px;
+    max-width: 80%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 0 10px 2px;
+    font-size: 1.7rem;
+    margin: 10.5rem;
+}
+
+/* button styles */
+.btn-container {
+    display: grid;
+    gap: 2px;
+    margin:10px;
+}
+
+.btn, .start-btn, .submit, .skip, .go-back, .clear-scores {
+    background-color: white;
+    border: none;
+    padding: 1.5rem;
+    font-size: 1.7rem;
+    width: 100%;
+}
+
+.btn:hover, .start-btn:hover, .submit:hover, .skip:hover, .go-back:hover, .clear-scores:hover {
+  border-color: brown;
+  background-color: white;
+  cursor: pointer;
+  transform: translate(-0.1rem);
+  box-shadow: 0 0.4rem 1.4rem 0 brown;
+}
+
+.submit[disabled]:hover{
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+.start-btn {
+    font-weight: bold;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+/* styles for answer result ("Correct/Incorrect") and score trackers */
+.display {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    border-top: peachpuff 1px solid;
+    font-size: 1.7rem;
+}
+
+.display div {
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+/*  styles  for end of the quiz screen to enter initials and save scores*/
+.end-title {
+    font-size: 3.7rem;
+}
+
+.end-game {
+    font-size: 2.7rem;
+}
+
+.end-game form {
+    font-weight: bold;
+}
+
+input {
+    border-radius: 2px;
+    border-width: 0;
+    color: peachpuff ;
+    font-size: 1em;
+    height: 45px;
+    line-height: 20px;
+    margin: 0;
+    margin-top: 10px;
+    max-width: 100%;
+    padding: 8px 8px 8px 8px;
+    transition-delay: 0s, 0s;
+    transition-duration: 0.2s, 0.2s;
+    transition-property: background-color, color;
+    transition-timing-function: ease, ease;
+    vertical-align: middle;
+    width: 100%;
+  }
+
+  input:hover {
+    background-color: peachpuff
+  }
+
+/* styles for lederboard */
+  .score-list {
+    margin: 5px 15px;
+    font-size: 2rem;
+    background: peachpuff;
+  }
+
+/* hider */
+.hide {
+    display: none;
+}

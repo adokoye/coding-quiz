@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz!</title>
+    <link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+
+<body>
+    <!-- header section -->
+    <header>
+        <h1>Coding Quiz Challenge</h1>
+        <div>
+            <a class="view-scores">View High Scores</a>
+            <h3>Time<span class="time"></span></h3>
+        </div>
+    </header>
+    <main class="page-content">
+
+        <!-- instructions  -->
+        <div class="instructions">
+            <h2>Instructions</h2>
+            <p>Try to answer the following code-related questions within the time limit. 10 points for each correct answer. 
+                Keep in mind that 10 seconds will be taken off the clock for each incorrect answer given.
+            </p>
+        </div>
+
+        <!-- the container that stores all the displayed content -->
+        <section class="quiz-box">
+            <!-- Start button  -->
+            <section>
+                <button class="start-btn">Start Quiz</button>
+            </section>
+            <!-- Question label and question display -->
+            <h2 class="question-label hide">Question: <span class="question"></span> </h2>
+            <!-- the four answer buttons that will update to hold the answer choices-->
+            <div class="btn-container hide">
+                <div class="answer-container">
+                    <p id="btn-1" class="btn">Answer 1</p>
+                </div>
+                <div class="answer-container">
+                    <p id="btn-2" class="btn">Answer 2</p>
+                </div>
+                <div class="answer-container">
+                    <p id="btn-3" class="btn">Answer 3</p>
+                </div>
+                <div class="answer-container">
+                    <p id="btn-4" class="btn">Answer 4</p>
+                </div>
+            </div>
+            <!-- this displays the score and the whether the answers were correct/incorrect -->
+            <div class="display hide">
+                <h4 id="answer"></h4>
+                <div>
+                    <p>Score</p>
+                    <h4 id="score">0</h4>
+                </div>
+            </div>
+            <!-- End of game display where initial and score is shown to submit to localStorage -->
+            <div class="end-game hide">
+                <h2 class="end-title">End of Quiz!</h2>
+                <p>You scored: <span class="current-score">0</span></p>
+                <form method="post">
+                    <label for="initials">Please enter your initials</label>
+                    <input type="text" name="initials" id="initials" placeholder="Initials">
+                    <button type="submit" class="submit" disabled>Submit</button>
+                </form>
+                <button class="skip">Skip</button>
+            </div>
+            <!--HighScores leaderboard  -->
+            <div class="high-scores hide">
+                <h2>High Scores</h2>
+                <ul class="high-scores-list"></ul>
+                <button class="go-back">Go back</button>
+                <button class="clear-scores">Clear High Scores</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="assets/css/js/script.js"></script>
+</body>
+
+</html>
