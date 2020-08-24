@@ -15,9 +15,9 @@ This is a timed coding quiz with multiple-choice questions.This app runs in the 
 * CSS
 
 ### Screenshot
-![Screenshot] (https://github.com/adokoye/coding-quiz/blob/master/assets/screenshots/screenshot-1.png)
+![Screenshot](https://github.com/adokoye/coding-quiz/blob/master/assets/screenshots/screenshot-1.png)
 
-![Screenshot] (https://github.com/adokoye/coding-quiz/blob/master/assets/screenshots/screenshot-2.png)
+![Screenshot](https://github.com/adokoye/coding-quiz/blob/master/assets/screenshots/screenshot-2.png)
 
 
 ### Link
