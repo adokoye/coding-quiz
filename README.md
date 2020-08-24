@@ -1,4 +1,4 @@
-# Code Quiz
+# Coding Quiz
 
 ## Table of contents
 * Introduction
